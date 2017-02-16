@@ -11,10 +11,12 @@ catalog:
       type: 'string'
     - variable: repo_user
       description: 'repo user'
+      label: 'repo_user'
       required: true
       type: 'string'
     - variable: repo_pass
       description: 'repo pass'
+      label: 'repo_pass'
       required: true
       type: 'password'
   
