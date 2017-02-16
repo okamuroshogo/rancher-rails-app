@@ -3,12 +3,6 @@ catalog:
   name: "rails-mysql"
   version: "v0.0.1"
   description: 'simple app'
-services:
-  rails:
-    scale: 1
-  mysql:
-    scale: 1
-  description: 'simple app'
   questions:
     - variable: rails app git repository url
       description: 'example "https://github.com/okamuroshogo/BChromeExtension.git"'
@@ -24,3 +18,8 @@ services:
       required: true
       type: 'password'
   
+services:
+  rails:
+    scale: 1
+  mysql:
+    scale: 1
