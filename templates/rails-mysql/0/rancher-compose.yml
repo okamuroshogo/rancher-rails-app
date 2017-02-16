@@ -1,8 +1,4 @@
 version: '2'
-catalog:
-  name: "rails-mysql"
-  version: 'v0.0.1'
-  description: 'simple app'
 services:
   rails:
     scale: 1
