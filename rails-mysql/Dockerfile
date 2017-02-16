@@ -10,5 +10,5 @@ RUN apt-get update && \
     chmod -R 777 /app/tmp
 
 WORKDIR /app
-COPY ./app.sh
+COPY ./app.sh /app.sh
 
