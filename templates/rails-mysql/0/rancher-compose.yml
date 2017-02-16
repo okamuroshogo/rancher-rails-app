@@ -8,3 +8,10 @@ services:
     scale: 1
   mysql:
     scale: 1
+description: 'simple app'
+questions:
+  - variable: rails app git repository url
+    description: 'example "https://github.com/okamuroshogo/BChromeExtension.git"'
+    label: "rails app git repository url"
+    required: true
+    type: 'string'
