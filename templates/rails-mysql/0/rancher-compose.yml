@@ -9,16 +9,19 @@ catalog:
       label: "rails app environment"
       required: true
       type: 'string'
+      default: 'development'
     - variable: repo_name
       description: 'example "okamuroshogo/BChromeExtension"'
       label: "rails app github repository name"
       required: true
       type: 'string'
+      default: 'okamuroshogo/BChromeExtension'
     - variable: repo_branch
       description: 'example "master"'
       label: "rails app github repository branch"
       required: true
       type: 'string'
+      default: 'master'
     - variable: repo_user
       description: 'repo user'
       label: 'repo user'
@@ -34,16 +37,19 @@ catalog:
       label: 'MySQL user name'
       required: true
       type: 'string'
+      default: 'user'
     - variable: mysql_pass
       description: '{rails_root}/config/database.yml'
       label: 'MySQL pass'
       required: true
       type: 'password'
+      default: 'password'
     - variable: mysql_db
       description: '{rails_root}/config/database.yml'
       label: 'MySQL db name'
       required: true
       type: 'string'
+      default: 'production_db' 
 services:
   rails:
     scale: 1
