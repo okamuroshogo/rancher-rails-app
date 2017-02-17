@@ -1,7 +1,7 @@
 #!/bin/sh
-git config http.postBuffer 524288000
 git config --global http.postBuffer 524288000
-git clone -b $REPO_BRANCH $RAILS_REPO_URL
+echo $RAILS_REPO_URL
+git clone -b $REPO_BRANCH $RAILS_REPO_URL app
 mkdir -p /app/tmp/sockets
 touch /app/tmp/sockets/puma.sock
 chmod -R 777 /app/tmp
