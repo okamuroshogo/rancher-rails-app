@@ -9,16 +9,14 @@ services:
   rails:
     image: okamuroshogo/rails-mysql-base
     environment:
-      MYSQL_USER: root
-      MYSQL_DB: production_db
-      MYSQL_HOST: db
-      MYSQL_PASS: root
+      MYSQL_USER: ${mysql_user}
+      MYSQL_DB: ${mysql_db}
+      MYSQL_HOST: mysql
+      MYSQL_PASS: ${mysql_pass}
       SECRET_KEY_BASE: 577923ac0fabb6b56f1371f6e26eb041fa134f6912763cbab2e9f46ebfcbb891cc428aa0d044bb8f69636e000bec9dfe0fc2a774586ec418e77785a281aa6c9a
-      RAILS_REPO_URL: https://${repo_user}:${repo_pass}@github.com/SMCommunication/mona.git .
-      REPO_USER: okamuroshogo  
-      REPO_PASS: ''
-      REPO_BRANCH: master
-      ENVIRONMENT: develop
+      RAILS_REPO_URL: https://${repo_user}:${repo_pass}@github.com/${repo_name}.git .
+      REPO_BRANCH: ${repo_branch}
+      ENVIRONMENT: ${repo_env}
     command:
       - bash
       - -c
