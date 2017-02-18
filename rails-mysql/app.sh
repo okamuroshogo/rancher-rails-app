@@ -2,6 +2,9 @@
 export GIT_TRACE_PACKET=1
 export GIT_TRACE=1
 export GIT_CURL_VERBOSE=1
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+curl_setopt($ch, CURLOPT_SSLVERSION, 3);
 git gc --aggressive
 git repack -a -f -d --window=250 --depth=250
 git config --global http.postBuffer 24288000
