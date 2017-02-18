@@ -11,11 +11,11 @@ catalog:
       type: 'string'
       default: 'development'
     - variable: repo_name
-      description: 'example "okamuroshogo/BChromeExtension"'
+      description: 'example "okamuroshogo/rails-sample"'
       label: "rails app github repository name"
       required: true
       type: 'string'
-      default: 'okamuroshogo/BChromeExtension'
+      default: ''
     - variable: repo_branch
       description: 'example "master"'
       label: "rails app github repository branch"

@@ -1,6 +1,7 @@
 FROM ruby:2.3.1
 ENV LANG C.UTF-8
 
+COPY ./datadase.yml /datadase.yml
 COPY ./app.sh /app.sh
 RUN apt-get update && \
     apt-get upgrade -y && \
